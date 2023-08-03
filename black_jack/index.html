@@ -1,0 +1,43 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" media="all" href="style.css">
+  <title>Black Jack</title>
+</head>
+
+<body>
+<h1>ブラックジャック</h1>
+<ul>
+<li>トランプのブラックジャックゲームです。
+<li>ヒットボタンをクリックすると、カードを１枚引きます。
+<li>スタンドボタンをクリックすると、自分のカードが確定します。
+<li>カードの数字の合計が21を超えた方が負けです。
+<li>合計がどちらも21以下ならば大きい方が勝ちです。
+<li>合計がどちらも21を超えたら引き分けです。
+<li>Jack, Queen, Kingの数字は10とみなされます。
+<li>Aceの数字は1または10のうち、持ち手にとって都合の良い方とみなされます。
+</ul>
+        <div class="container">
+            <P>相手: <span id="com_sum"></span></P>
+            <table>
+                <tr id="com_card">
+                </tr>
+            </table>
+        </div>
+        <div>
+            <p>結果: <span id="result"></span></p>
+        </div>
+        <div class="container">
+            <P>あなた:  <span id="your_sum"></span></P>
+            <table>
+                <tr id="your_card">
+                </tr>
+            </table>
+        </div>
+        <button id="reset">リセット</button>
+        <button id="hit">ヒット</button>
+        <button id="stand">スタンド</button>
+</body>
+</html>
+<script src="main.js"></script>

@@ -1,0 +1,46 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" media="all" href="/main.css">
+  <title>Cheryl birthday</title>
+</head>
+
+<body>
+        <div class="container">
+          <p>Cさんは自分の誕生日の月だけをA君、日だけをB君に教えた。</p>
+          <p>A君とB君は以下のことを知っている。</p>
+          <ul>
+            <li>A君は月を教えられたが、日は教えられていない。</li>
+            <li>B君は月を教えられていないが、日は教えられた。</li>
+          </ul>
+
+          <p>Cさんは下記の候補に自分の誕生日があると二人に教えた</p>
+
+          <div>
+            <form id="form" method="post" action="example.cgi">
+              <div id="choices">
+              </div>
+              <input type="button" value="解答する" onclick="getRadioValue('birthday')"/>
+              <div id="output"></div>
+            </form>
+          </div>
+
+          <div>
+            <form id="form" method="post" action="example.cgi">
+              <div id="target">
+              </div>
+            </form>
+          </div>
+        </div>
+        <p>以下の会話から、Cさんの誕生日を解答せよ。</p>
+          <ol>
+            <li>A君：B君はCさんの誕生日が分からないはずだ。</li>
+            <li>B君：そうだったけど、今は分かった。</li>
+            <li>A君：それならば、僕も分かった。</li>
+          </ol>
+        <p>結果: <span id="result"></span></p>  
+        <button id="reset">リセット</button>
+</body>
+</html>
+<script src="main.js"></script>

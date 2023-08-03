@@ -1,0 +1,135 @@
+div.hidden {
+    display: none;
+}
+
+div.visible {
+    display: block;
+}
+
+body {
+    text-align: center;
+    user-select: none;
+}
+
+.player_tag {
+    color: red;
+    font-size: -webkit-xxx-large;
+
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.computer_tag {
+    color: blue;
+    font-size: -webkit-xxx-large;
+
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#top {
+    width: 90%;
+    margin: 0 auto;
+}
+
+#start {
+    float:left;
+    width:44%;
+    padding:3%;
+}
+
+#start2 {
+    float:left;
+    width:44%;
+    padding:3%;
+}
+
+#start3 {
+    width:90%;
+    margin:0 auto;
+    padding:3%;
+}
+
+#start:hover {
+    background: #222;
+    color: white;
+    cursor: pointer;
+    /*カーソルをポインターに変える*/
+}
+
+#start2:hover {
+    background: #222;
+    color: white;
+    cursor: pointer;
+    /*カーソルをポインターに変える*/
+}
+
+#start3:hover {
+    background: #222;
+    color: white;
+    cursor: pointer;
+    /*カーソルをポインターに変える*/
+}
+
+#game {
+    margin-right: auto;
+    /* 中央寄せ */
+    margin-left: auto;
+    /* 中央寄せ */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: stretch;
+    width: 400px;
+}
+
+#game.pointer-none {
+    pointer-events: none;
+}
+
+.field {
+    width: 100px;
+    height: 100px;
+    padding: 0;
+    margin: 0;
+    color: #6091d3;
+    /*角の丸み*/
+
+    display: table;
+    text-align: center;
+}
+
+.field:hover {
+    background: #ccf0bc;
+    cursor: pointer;
+}
+
+.area0{
+    border-right: solid 3px #222;
+    border-bottom: solid 3px #222;
+}
+.area1{
+    border-bottom: solid 3px #222;
+}
+.area2{
+    border-left: solid 3px #222;
+    border-bottom: solid 3px #222;
+}
+.area3{
+    border-right: solid 3px #222;
+    border-bottom: solid 3px #222;
+}
+.area4{
+    border-right: solid 3px #222;
+    border-bottom: solid 3px #222;
+}
+.area5{
+    border-bottom: solid 3px #222;
+}
+.area6{
+    border-right: solid 3px #222;
+}
+.area7{
+    border-right: solid 3px #222;
+}

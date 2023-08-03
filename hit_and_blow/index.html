@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Hit&Blow</title>
+</head>
+
+<body>
+  <h1>Hit and Blow（数当て）ゲーム</h1>
+  <ul>
+    <li>ランダムに選ばれた３桁の数字を当てるゲームです。
+    <li>３桁の推測値を入力し、判定ボタンをクリックしてください。
+    <li>HITは、各桁の数字と位置が一致した個数です。
+    <li>BLOWは、正解に含まれているが桁の位置が異なる数字の個数です。
+  </ul>
+  <div class="c-inputBlock">
+      <input class="input" type="text">
+      <button class="judge">判定</button>
+      <button class="judge-clear">クリア</button>
+    </div>
+    <p><span class="challenge_num">チャレンジ数: </span></p>
+    <p><span class="result">入力した文字: </span></p>
+    <p><span class="result-hit">HIT: </span></p>
+    <p><span class="result-blow">BLOW: </span></p>
+    <br>
+    <div id="parent-div">
+      <p id="log_p1">判定ログ</p>
+    </div>
+</body>
+</html>
+<script src="main.js"></script>
